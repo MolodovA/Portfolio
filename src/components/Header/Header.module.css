@@ -1,0 +1,33 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    background: rgb(24, 38, 54);
+    z-index: 100;
+}
+.header__container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header__row{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.header__logo{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform:uppercase;
+}
+
+@media (max-width: 767px) {
+
+.header__logo{
+    position: relative;
+    z-index: 102;
+
+}
+}
