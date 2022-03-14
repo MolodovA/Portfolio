@@ -1,17 +1,18 @@
 import React from 'react';
-import style from './Contacts.module.css'
+import style from './Contacts.module.scss'
 import {Contact} from "./Contact";
+import Title from '../Title/Title';
 
 export const Contacts = () => {
     return (
         <section className={style.contacts}>
-            <div className={style.contacts__title}>Contacts</div>
+           <Title title='Contacts'/>
             <div className={style.contacts__subtitle}>Let`s get work with me:</div>
             <div className={style.contacts__row}>
             <Contact text={'Saint-Petersburg'} label={'adress'} link={'https://yandex.ru/maps/2/saint-petersburg/'}/>
             <Contact text={'github.com.io:'} label={'Git Hub'} link={'https://github.com/MolodovA'}/>
-            <Contact text={'Molodov'} label={'In'} link={'/'}/>
-            <Contact text={'post@.com'} label={'email'} link={'/'}/>
+            <Contact text={'Molodov'} label={'LinkedIn'} link={'/*'}/>
+            <Contact text={'post@.com'} label={'email'} link={'/*'}/>
             </div>
         </section>
     );

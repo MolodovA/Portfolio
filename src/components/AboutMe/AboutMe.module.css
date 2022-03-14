@@ -12,6 +12,8 @@
 .about__image {
     border-radius: 20px;
     position: relative;
+    width: 684px;
+    height: 626px;
 }
 
 .about__image::after {

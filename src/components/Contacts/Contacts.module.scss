@@ -11,13 +11,22 @@
 .contacts__subtitle{
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 .contacts__row{
 
 }
+.title__link{
+    display: inline-block;
+    margin-left: 5px;
+}
+.link{
+    color:white;
 
-
+}
+.title__link:hover{
+    text-decoration: underline;
+}
 
 @media (max-width: 767px){
     .contacts{

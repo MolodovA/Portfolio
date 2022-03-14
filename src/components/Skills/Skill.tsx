@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './Skills.module.css'
+import style from './Skills.module.scss'
 
 type SkillPropsType = {
-    icon:string
+    icon:any
     label:string
     description:string
 }

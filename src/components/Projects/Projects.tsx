@@ -1,12 +1,12 @@
 import React from 'react';
 import style from './Projects.module.css'
-import {Link} from "react-router-dom";
 import {Project} from "./Project";
+import Title from '../Title/Title';
 
 export const Projects = () => {
     return (
         <section className={style.projects}>
-            <h2 className={style.projects__title}>My work</h2>
+          <Title title={'My works'}/>
             <div className={style.row}>
                 <Project title={'Todolist'} photo={'image'}/>
                 <Project title={'Network'} photo={'image'}/>

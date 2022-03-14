@@ -1,6 +1,7 @@
-.projects{
+.projects {
     padding: 50px 0;
 }
+
 .projects__title {
     font-size: 1.7rem;
     font-weight: 700;
@@ -20,16 +21,9 @@
 
 }
 
-
 .item {
     display: flex;
     flex-direction: column;
-}
-
-.title {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    text-align: center;
 }
 
 .link {
@@ -43,28 +37,26 @@
     flex: 0 0 200px;
     width: 100%;
 }
-@media (max-width: 992px){
-    .projects{
+
+@media (max-width: 992px) {
+    .projects {
         padding: 10px 0;
     }
-    .projects__title {
-        margin-bottom: 3rem;
-    }
+
     .row {
-  margin: 0 -10px;
-        gap:0;
+        margin: 0 -10px;
+        gap: 0;
     }
+
     .column {
         flex: 0 1 50%;
         margin-bottom: 2rem;
-        padding: 0 10px ;
+        padding: 0 10px;
     }
 }
-@media (max-width: 480px){
-    .projects__title {
 
-        margin-bottom: 2rem;
-    }
+@media (max-width: 480px) {
+
     .column {
         flex: 0 1 100%;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./Contacts.module.css";
+import style from "./Contacts.module.scss";
 
 type ContactPropsType = {
     link:string
@@ -9,7 +9,7 @@ type ContactPropsType = {
 export const Contact = (props:ContactPropsType) => {
     return (
         <div className={style.contact}>{props.label}:
-            <a  href={props.link}>{props.text}</a>
+            <a className={style.link}  href={props.link}><span className={style.title__link}>{props.text}</span></a>
         </div>
     );
 };
