@@ -12,7 +12,7 @@ export const Contacts = () => {
             <Contact text={'Saint-Petersburg'} label={'adress'} link={'https://yandex.ru/maps/2/saint-petersburg/'}/>
             <Contact text={'github.com.io:'} label={'Git Hub'} link={'https://github.com/MolodovA'}/>
             <Contact text={'Molodov'} label={'LinkedIn'} link={'/*'}/>
-            <Contact text={'post@.com'} label={'email'} link={'/*'}/>
+            <Contact text={'post@blavla.com'} label={'email'} link={'/*'}/>
             </div>
         </section>
     );
