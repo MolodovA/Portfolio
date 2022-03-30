@@ -7,7 +7,8 @@ export const Contacts = () => {
     return (
         <section className={style.contacts}>
            <Title title='Contacts'/>
-            <div className={style.contacts__subtitle}>Let`s get work with me:</div>
+       {/*   // {<div className={style.contacts__subtitle}>Let`s get work with
+            me:</div>}*/}
             <div className={style.contacts__row}>
             <Contact text={'Saint-Petersburg'} label={'adress'} link={'https://yandex.ru/maps/2/saint-petersburg/'}/>
             <Contact text={'github.com.io:'} label={'Git Hub'} link={'https://github.com/MolodovA'}/>
