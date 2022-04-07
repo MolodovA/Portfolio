@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import style from './Nav.module.css'
+import style from './Nav.module.scss'
 import {Link} from "react-router-dom";
 export const Nav = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import style from './Projects.module.css'
+import style from './Projects.module.scss'
 import {Project} from "./Project";
-import Title from '../Title/Title';
+import Title from '../Common/Title/Title';
 
 export const Projects = () => {
     return (

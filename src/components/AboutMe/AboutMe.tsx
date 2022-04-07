@@ -1,9 +1,91 @@
 import React from 'react';
-import style from './AboutMe.module.css'
+import Particles from 'react-tsparticles';
+import style from './AboutMe.module.scss'
+
+
+
+
 
 export const AboutMe = () => {
     return (
         <section className={style.about}>
+            <Particles options={{
+                    background: {
+                        color: {
+                            value: "black",
+                        },
+                    },
+                    fpsLimit: 120,
+                    interactivity: {
+                        events: {
+                            onClick: {
+                                enable: true,
+                                mode: "push",
+                            },
+                            onHover: {
+                                enable: true,
+                                mode: "repulse",
+                            },
+                            resize: true,
+                        },
+                        modes: {
+                            bubble: {
+                                distance: 400,
+                                duration: 2,
+                                opacity: 0.2,
+                                size: 40,
+                            },
+                            push: {
+                                quantity: 4,
+                            },
+                            repulse: {
+                                distance: 200,
+                                duration: 0.4,
+                            },
+                        },
+                    },
+                    particles: {
+                        color: {
+                            value: "#ffffff",
+                        },
+                        links: {
+                            color: "#ffffff",
+                            distance: 150,
+                            enable: true,
+                            opacity: 0.2,
+                            width: 1,
+                        },
+                        collisions: {
+                            enable: true,
+                        },
+                        move: {
+                            direction: "none",
+                            enable: true,
+                            outMode: "bounce",
+                            random: false,
+                            speed: 3,
+                            straight: false,
+                        },
+                        number: {
+                            density: {
+                                enable: true,
+                                area: 800,
+                            },
+                            value: 80,
+                        },
+                        opacity: {
+                            value: 0.2,
+                        },
+                        shape: {
+                            type: "circle",
+                        },
+                        size: {
+                            random: true,
+                            value: 5,
+                        },
+                    },
+                    detectRetina: true,
+                }}/>
             <div className={style.about__column}>
                 <div className={style.about__image}>
                     <img
@@ -12,9 +94,10 @@ export const AboutMe = () => {
 
                 </div>
             </div>
-            <div className={style.about__column + ' ' + style.about__column_text}>
+            <div className={`${style.about__column}  ${style.about__column_text}`}>
                 <h3 className={style.about__subtitle}>Hi every there </h3>
                 <h1 className={style.about__title}> My name is Aleksandr Molodov</h1>
+                <h2 className={style.about__position}>I'm frontend developer</h2>
                 <p>I'm frontend developer with
                     experience in creating SPA.
                     I am using React(JS/TS), Redux, HTML & CSS. Now

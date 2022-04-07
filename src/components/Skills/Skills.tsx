@@ -3,7 +3,7 @@ import style from './Skills.module.scss'
 import {Skill} from "./Skill";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHtml5, faJs, faReact, faCss3, faBootstrap,faGithub} from '@fortawesome/free-brands-svg-icons'
-import Title from '../Title/Title';
+import Title from '../Common/Title/Title';
 
 
 export const Skills = () => {
