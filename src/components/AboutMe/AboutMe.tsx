@@ -11,7 +11,7 @@ export const AboutMe = () => {
 
 
 
-        <section className={style.about}>
+        <section className={style.about} id={ 'about'}>
 
             <Particles options={{
                     background: {

@@ -5,7 +5,7 @@ import Title from '../Common/Title/Title';
 
 export const Contacts = () => {
     return (
-        <section className={style.contacts}>
+        <section className={style.contacts} id='contacts'>
            <Title title='Contacts'/>
          <div className={style.contacts__subtitle}>Let`s get work with
             me:</div>

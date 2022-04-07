@@ -29,7 +29,6 @@
   .about__title {
     font-size: 1.7rem;
     font-weight: 700;
-    margin-bottom: 1rem;
   }
 
   .about__subtitle {
@@ -38,7 +37,11 @@
     margin-bottom: 1rem;
   }
 
-
+  .about__position{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
   .about__image {
     border-radius: 20px;
     position: relative;
