@@ -1,14 +1,18 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 import style from './AboutMe.module.scss'
-
-
+//@ts-ignore
+import ReactTypingEffect from 'react-typing-effect';
 
 
 
 export const AboutMe = () => {
     return (
+
+
+
         <section className={style.about}>
+
             <Particles options={{
                     background: {
                         color: {
@@ -31,8 +35,8 @@ export const AboutMe = () => {
                         modes: {
                             bubble: {
                                 distance: 400,
-                                duration: 2,
-                                opacity: 0.2,
+                                duration: 0,
+                                opacity: 1,
                                 size: 40,
                             },
                             push: {
@@ -56,14 +60,14 @@ export const AboutMe = () => {
                             width: 1,
                         },
                         collisions: {
-                            enable: true,
+                            enable: false,
                         },
                         move: {
                             direction: "none",
                             enable: true,
                             outMode: "bounce",
                             random: false,
-                            speed: 3,
+                            speed: 2,
                             straight: false,
                         },
                         number: {
@@ -97,7 +101,12 @@ export const AboutMe = () => {
             <div className={`${style.about__column}  ${style.about__column_text}`}>
                 <h3 className={style.about__subtitle}>Hi every there </h3>
                 <h1 className={style.about__title}> My name is Aleksandr Molodov</h1>
-                <h2 className={style.about__position}>I'm frontend developer</h2>
+                <h2 className={style.about__position}>
+                    <ReactTypingEffect
+                        text={["Frontend Developer"]} speed={200} eraseDelay={3000} typingDelay={1000}
+                    />
+                </h2>
+
                 <p>I'm frontend developer with
                     experience in creating SPA.
                     I am using React(JS/TS), Redux, HTML & CSS. Now
@@ -107,7 +116,10 @@ export const AboutMe = () => {
                     collaborative team.</p>
 
             </div>
+
         </section>
+
     );
+
 };
 

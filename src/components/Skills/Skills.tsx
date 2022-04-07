@@ -5,10 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHtml5, faJs, faReact, faCss3, faBootstrap,faGithub} from '@fortawesome/free-brands-svg-icons'
 import Title from '../Common/Title/Title';
 
+// @ts-ignore
+import Flip from 'react-reveal/Flip';
+
 
 export const Skills = () => {
     return (
+
         <section className={style.skills}>
+            <Flip left>
             <Title title={'Skills'}/>
             <div className={style.skills__row}>
                 <Skill description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, vero.'}  icon={<FontAwesomeIcon icon={faHtml5}/>} label={'HTML5'}/>
@@ -24,7 +29,9 @@ export const Skills = () => {
                 <Skill description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.'} icon={'icon'} label={'material ui'}/>
                 <Skill description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, nobis?'} icon={<FontAwesomeIcon icon={faGithub} />} label={'Git Hub'}/>
             </div>
+            </Flip>
         </section>
+
 
 
     );
