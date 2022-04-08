@@ -12,8 +12,8 @@ export const Projects = () => {
             <Flip left>
             <Title title={'My works'}/>
                 <div className={style.row}>
-                    <Project title={'Todolist'} photo={todolistDemo}/>
-                    <Project title={'Social Network'} photo={socialNetworkDemo}/>
+                    <Project link={'https://molodova.github.io/Todolist/'} title={'Todolist'} photo={todolistDemo}/>
+                    <Project link={''} title={'Social Network'} photo={socialNetworkDemo}/>
                 </div>
             </Flip>
         </section>

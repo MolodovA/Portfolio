@@ -2,16 +2,17 @@ import React, {useState} from 'react';
 import style from './Nav.module.scss'
 
 import {Link} from "react-scroll";
-import { useEffect } from 'react';
+import {useEffect} from 'react';
 
 
 function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
+    const {innerWidth: width, innerHeight: height} = window;
     return {
         width,
         height
     };
 }
+
 export const Nav = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(true)
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
@@ -20,6 +21,7 @@ export const Nav = () => {
         function handleResize() {
             setWindowDimensions(getWindowDimensions());
         }
+
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -33,7 +35,7 @@ export const Nav = () => {
                 <label className={style.menu__btn} onClick={onChangeClick}>
                     <span></span>
                 </label>
-                <ul className={isOpenMenu &&  windowDimensions.width < 767? style.show : style.list  }>
+                <ul className={isOpenMenu && windowDimensions.width < 767 ? style.show : style.list}>
                     <li className={style.list__item}>
                         <Link
                             className={style.list__link}

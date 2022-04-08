@@ -28,7 +28,7 @@
     }
   }
   @media (max-width: 767px) {
-    border:none;
+    border: none;
   }
 }
 
@@ -78,7 +78,8 @@
   }
   .list__item {
     margin: 0 0 2rem 0;
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 0;
     }
   }

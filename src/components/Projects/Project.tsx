@@ -1,17 +1,18 @@
 import React from 'react';
 import style from './Projects.module.scss'
-import {Link} from "react-router-dom";
 
 type ProjectPropsType = {
-    title:string
-    photo: any
+    title: string
+    photo: string
+    link: string
 }
-export const Project = ({title , photo }:ProjectPropsType) => {
+export const Project = ({title, photo, link}: ProjectPropsType) => {
     return (
         <div className={style.column}>
             <div className={style.item}>
                 <div className={style.title}>{title}</div>
-                <Link to={'/'} className={style.link}><img src={photo} alt="project logo"/></Link>
+                <a target='_blank' href={link} className={style.link}>
+                    <img src={photo} alt="project logo"/></a>
             </div>
         </div>
 
