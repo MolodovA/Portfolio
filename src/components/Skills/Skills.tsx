@@ -25,49 +25,49 @@ export const Skills = () => {
                 <Title title={'Skills'}/>
                 <div className={style.skills__row}>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eaque?'}
+                        description={''}
                         icon={<img src={js} alt="js logo"/>}
                         label={'Java Script'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, omnis.'}
+                        description={''}
                         icon={<img src={react} alt="react logo"/>}
                         label={'React'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptatibus.'}
+                        description={''}
                         icon={
                             <img src={redux} alt="redux logo"/>}
                         label={'Redux'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, vitae.'}
+                        description={''}
                         icon={<img src={ts} alt="ts logo"/>}
                         label={'Type Script'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, vitae!'}
+                        description={''}
                         icon={<img src={api} alt="api logo"/>}
                         label={'REST API'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, non?'}
+                        description={''}
                         icon={<img src={tests} alt="unit test logo"/>}
                         label={'UNIT TEST'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, vero.'}
+                        description={''}
                         icon={<img src={html} alt="html logo"/>}
                         label={'HTML5'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, sed.'}
+                        description={''}
                         icon={<img src={css} alt="css logo"/>} label={'CSS3'}/>
 
 
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, explicabo.'}
+                        description={''}
                         icon={<img src={storybook} alt="storybook logo"/>}
                         label={'Storybook'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.'}
+                        description={''}
                         icon={<img src={materialUI} alt="materialUI logo"/>}
                         label={'material ui'}/>
                     <Skill
-                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, nobis?'}
+                        description={''}
                         icon={<img src={github} alt="gitHub logo"/>}
                         label={'Git Hub'}/>
                 </div>

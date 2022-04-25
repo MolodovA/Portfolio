@@ -13,12 +13,6 @@ function App() {
             <Header/>
             <div className="page">
                 <div className="page__container">
-                    {/*       <Routes>
-              <Route path='/about' element={<AboutMe/>} />
-              <Route path='/skills' element={ <Skills/>} />
-              <Route path='/projects' element={<Projects/>} />
-              <Route path='/contacts' element={ <Contacts/>} />
-          </Routes>*/}
                     <AboutMe/>
                     <Skills/>
                     <Projects/>
